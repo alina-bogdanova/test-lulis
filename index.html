@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Lulis fashion brand</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/media.css">
+
+		<!-- Vanilla Form start -->
+		<link rel="stylesheet" href="vanilla-form/css/vanilla-form.css">
+		<script src="vanilla-form/js/vanilla-form.js"></script>
+		<script>
+			function setPreview(preview, elem) {
+				var container = document.querySelector(".form-container"),
+					activeElement;
+
+					activeElement = elem.parentNode.querySelector(".active");
+				if (activeElement) {
+					activeElement.classList.remove("active");
+				}
+				elem.classList.add("active");
+
+				switch (preview) {
+					case "smartphone":
+					case "tablet":
+						container.className = "form-container simulate-"+preview;
+                    break;
+					default:
+						container.className = "form-container";
+                    break;
+				}
+			}
+		</script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				"use strict";
+				var myForm = new VanillaForm(document.querySelector(".vanilla-form"));
+			});
+		</script>
+
+		
+		
+	<!--gallery-->		
+		<link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
+		<script type='text/javascript' src='js/jquery-11.0.min.js'></script>	
+		<script type='text/javascript' src='js/unitegallery.min.js'></script>	
+		<script type='text/javascript' src='js/ug-theme-tiles.js'></script>
+		
+		
+	<!--slider-->
+		<link rel="stylesheet" href="css/responsiveslides.css"> 
+		
+		<script src="js/responsiveslides.min.js"></script>
+		<script src="js/slider.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#slider").responsiveSlides({
+					auto: true,
+					pager: false,
+					nav: true,
+					speed: 450,
+					namespace: "callbacks",
+					before: function () {
+						$('.events').append("<li>before event fired.</li>");
+						},
+					after: function () {
+						$('.events').append("<li>after event fired.</li>");
+						}
+				});
+			});
+		</script>
+
+	<!--animacia-->
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+
+</head>
+<body>
+
+
+	<header>
+		<div class="cd-fixed-bg cd-bg-1">
+			<div class="top_wrapper">
+				<div class="top_desc">
+					<div class="top_centered">
+						<div class="top_text wow fadeInDown" data-wow-duration="2s">
+							<h1 class="wow fadeInDown" data-wow-duration="2s">Lulis fashion brand</h1>
+							<p class="wow fadeInUp" data-wow-delay="1s">Let your dress speak</p>
+						</div>
+					</div>
+				</div> 
+			</div>   
+		
+		
+	    </div>
+	</header>
+	
+	<main>
+		<div class="cd-scrolling-bg cd-color-2">
+		<div class="cd-container">	
+		
+			<section id="about" class="about">
+				<div class="section_header wow fadeInUp" data-wow-duration="2s">
+					<h1>О компании</h1>
+					
+					<div class="desc_wrap">
+						<p>Давайте познакомимся</p>
+					</div>
+				</div>
+				
+				<div class="section_content">
+					<div class="container">
+						<div class="desc_container">
+							<div class="desc_container_left wow fadeInLeft" >
+								<h3>Немного о нас</h3>
+								<p>What is Lorem Ipsum?</p>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+							</div>	
+							
+							
+							<div class="desc_container_right wow fadeInRight" >
+								<div class="slider callbacks_container">
+
+									<ul class="rslides"id="slider">
+										<li><img src="img/1.jpg" alt=""></li>
+										<li><img src="img/2.jpg" alt=""></li>
+										<li><img src="img/3.jpg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>		
+			
+		</div> 
+	    </div>   
+					
+			<section class="bg-image">
+				<div class="cd-fixed-bg cd-bg-1">
+					<div class="top_wrapper-2">
+						<div class="top_desc-2">
+							<div class="top_centered-2">
+								<div class="top_text-2 wow fadeInDown" data-wow-duration="2s">
+									<h1 class="wow fadeInDown" data-wow-duration="2s">What is Lorem Ipsum?</h1>
+									<p class="wow fadeInUp" data-wow-delay="1s">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy..."</p>
+								</div>
+							</div>
+						</div> 
+					</div> 
+				</div> 				
+			</section>
+
+			
+			
+			
+			<section class="portfolio">				
+				<div class="section_header wow fadeInUp" data-wow-duration="2s">
+					<h1>Портфолио</h1>
+					
+					<div class="desc_wrap">
+						<p>Наши работы</p>
+					</div>
+				</div>
+				
+				<div class="section_gallery">
+					<div class="gallery_container wow fadeInLeft">		
+						<div id="gallery" style="display:none;">
+						 
+							<img alt="Image 1 Title" src="images/4s.jpg"
+							data-image="images/4.jpg"
+							data-description="Image 1 Description">
+							
+							<img alt="Image 2 Title" src="images/2s.jpg"
+							data-image="images/2.jpg"
+							data-description="Image 2 Description">
+							
+							<img alt="Image 2 Title" src="images/3s.jpg"
+							data-image="images/3.jpg"
+							data-description="Image 2 Description">
+							
+							<img alt="Image 1 Title" src="images/1s.jpg"
+							data-image="images/1.jpg"
+							data-description="Image 1 Description">
+							
+							<img alt="Image 1 Title" src="images/5s.jpg"
+							data-image="images/5.jpg"
+							data-description="Image 1 Description">
+			
+							<img alt="Image 1 Title" src="images/10s.jpg"
+							data-image="images/10.jpg"
+							data-description="Image 1 Description">
+							
+							<img alt="Image 1 Title" src="images/7s.jpg"
+							data-image="images/7.jpg"
+							data-description="Image 1 Description">
+			
+							<img alt="Image 1 Title" src="images/6s.jpg"
+							data-image="images/6.jpg"
+							data-description="Image 1 Description">
+							
+							<img alt="Image 1 Title" src="images/8s.jpg"
+							data-image="images/8.jpg"
+							data-description="Image 1 Description">
+							
+							<img alt="Image 1 Title" src="images/9s.jpg"
+							data-image="images/9.jpg"
+							data-description="Image 1 Description">
+						
+						</div>
+					</div>
+				</div>			
+			</section>
+			
+			
+			<section class="mnenia">
+			
+				<div class="section_header wow fadeInUp" data-wow-duration="2s">
+					<h1>Отзывы наших клиентов</h1>
+					
+					<div class="desc_wrap">
+						<p>Что говорят наши клиенты</p>
+					</div>
+				</div>		
+
+			</section>
+			
+			
+			<section class="link">	
+				<div class="section_header wow fadeInUp" data-wow-duration="2s">
+					<h1>Напишите нам</h1>
+					
+					<div class="desc_wrap">
+						<p>Форма обратной связи</p>
+					</div>
+				</div>
+				
+				<div class="section_form">
+					<div class="form-container">
+						<!-- Vanilla Form markup starts here -->
+						<form action="vanilla-form/demo-contact-form.php" method="post" class="vanilla-form" novalidate="novalidate">
+							
+							<!-- Left column -->
+							<div class="column-50">
+								<input type="text" name="name" placeholder="Ваше имя" required="required">
+								<input type="email" name="email" placeholder="Ваш e-mail" required="required">
+							</div><!--
+                Right column
+						 --><div class="column-50">
+								<input type="tel" name="tel" placeholder="Телефон">
+
+							</div>
+                
+							<div class="column-100">
+								<textarea name="message" placeholder="Ваше сообщение..."></textarea>
+							</div>
+				
+							<div class="column-100 center">
+								<input type="submit" value="Отправить" data-error="Ошибка отправки" data-processing="Отправка..." data-success="Спасибо за Ваше письмо!">
+							</div>
+							
+							<footer class="notification-box"></footer>
+						</form>
+						<!-- Vanilla Form markup ends here -->
+					</div>
+				</div>
+			</section>
+
+		
+		  
+    </main>
+
+		<script type="text/javascript">
+
+			jQuery(document).ready(function(){
+				jQuery("#gallery").unitegallery();
+			});
+		
+		</script>
+
+
+</body>
+</html>
