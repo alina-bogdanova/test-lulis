@@ -6,41 +6,6 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/media.css">
-
-		<!-- Vanilla Form start -->
-		<link rel="stylesheet" href="vanilla-form/css/vanilla-form.css">
-		<script src="vanilla-form/js/vanilla-form.js"></script>
-		<script>
-			function setPreview(preview, elem) {
-				var container = document.querySelector(".form-container"),
-					activeElement;
-
-					activeElement = elem.parentNode.querySelector(".active");
-				if (activeElement) {
-					activeElement.classList.remove("active");
-				}
-				elem.classList.add("active");
-
-				switch (preview) {
-					case "smartphone":
-					case "tablet":
-						container.className = "form-container simulate-"+preview;
-                    break;
-					default:
-						container.className = "form-container";
-                    break;
-				}
-			}
-		</script>
-
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				"use strict";
-				var myForm = new VanillaForm(document.querySelector(".vanilla-form"));
-			});
-		</script>
-
-		
 		
 	<!--gallery-->		
 		<link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
@@ -142,7 +107,7 @@
 	    </div>   
 					
 			<section class="bg-image">
-				<div class="cd-fixed-bg cd-bg-1">
+				<div class="cd-fixed-bg cd-bg-2">
 					<div class="top_wrapper-2">
 						<div class="top_desc-2">
 							<div class="top_centered-2">
@@ -159,7 +124,7 @@
 			
 			
 			
-			<section class="portfolio">				
+			<section id="portfolio" class="portfolio">				
 				<div class="section_header wow fadeInUp" data-wow-duration="2s">
 					<h1>Портфолио</h1>
 					
@@ -218,7 +183,7 @@
 			</section>
 			
 			
-			<section class="mnenia">
+			<section id="mnenia" class="mnenia">
 			
 				<div class="section_header wow fadeInUp" data-wow-duration="2s">
 					<h1>Отзывы наших клиентов</h1>
@@ -231,49 +196,114 @@
 			</section>
 			
 			
-			<section class="link">	
+			<section id="link" class="link">	
 				<div class="section_header wow fadeInUp" data-wow-duration="2s">
-					<h1>Напишите нам</h1>
+					<h1>Контакты</h1>
 					
 					<div class="desc_wrap">
-						<p>Форма обратной связи</p>
+						<p>Свяжитесь с нами</p>
 					</div>
 				</div>
 				
-				<div class="section_form">
-					<div class="form-container">
-						<!-- Vanilla Form markup starts here -->
-						<form action="vanilla-form/demo-contact-form.php" method="post" class="vanilla-form" novalidate="novalidate">
-							
-							<!-- Left column -->
-							<div class="column-50">
-								<input type="text" name="name" placeholder="Ваше имя" required="required">
-								<input type="email" name="email" placeholder="Ваш e-mail" required="required">
-							</div><!--
-                Right column
-						 --><div class="column-50">
-								<input type="tel" name="tel" placeholder="Телефон">
-
-							</div>
-                
-							<div class="column-100">
-								<textarea name="message" placeholder="Ваше сообщение..."></textarea>
-							</div>
 				
-							<div class="column-100 center">
-								<input type="submit" value="Отправить" data-error="Ошибка отправки" data-processing="Отправка..." data-success="Спасибо за Ваше письмо!">
-							</div>
+				<div class="section_content">
+					<div class="container">
+						<div class="link_container">
+							<p class="wow fadeInUp" data-wow-duration="2s">Не стесняйтесь, напишите нам краткое сообщение или свяжитесь с нами любым удобным способом</p>
 							
-							<footer class="notification-box"></footer>
-						</form>
-						<!-- Vanilla Form markup ends here -->
+							<div class="contact  wow fadeInUp" data-wow-duration="2s">
+								<div class="contact_tel">
+									<div class="tel">
+										<img src="img/tel.png" alt="Photo">
+									</div>
+										<span class="tel">8-910-465-34-44</span>
+								</div>
+							
+								<div class="contact_mail  wow fadeInUp" data-wow-duration="2s">
+									<div class="mail">
+										<img src="img/mail.png" alt="Photo">
+									</div>
+										<a href="mailto:alina@gmail.com">alina@gmail.com</a>	
+								</div>
+								
+								<div class="social">
+									<h4 class="wow fadeInUp" data-wow-duration="2s">Социальные сети</h4>
+									
+									<p class="wow fadeInUp" data-wow-duration="2s">Следите за нами в социальных сетях, чтобы быть в курсе последних событий</p>
+									
+									<div class="social_icon">
+										<div class="social_icon_vk wow fadeInUp" data-wow-duration="2s">
+											<div class="vk">
+												<a href="https://vk.com/lulis_shop" target="_blank"> 
+													<img src="img/vk.png" alt="Photo">
+											</div>
+											<a href="https://vk.com/lulis_shop" target="_blank"> 
+												<span>вконтакте</span>
+											</a>
+										</div>
+										
+										<div class="social_icon_fb wow fadeInUp" data-wow-duration="2s">
+											<div class="fb">
+												<a href="https://www.facebook.com/profile.php?id=100018297703899" target="_blank"> 
+													<img src="img/fb.png" alt="Photo">
+												</a>
+											</div>
+											<a href="https://www.facebook.com/profile.php?id=100018297703899" target="_blank"> 
+												<span>facebook</span>
+											</a>
+										</div>
+										
+										<div class="social_icon_inst wow fadeInUp" data-wow-duration="2s">
+											<div class="inst">
+												<a href="https://www.instagram.com/lulis_shop/" target="_blank"> 
+													<img src="img/inst.png" alt="Photo">
+												</a>
+											</div>
+											<a href="https://www.instagram.com/lulis_shop/" target="_blank"> 
+												<span>instagram</span>
+											</a>
+										</div>
+									</div>
+									
+								
+								
+								</div>
+								
+								
+								
+							</div>	
+								
+								
+						</div>
 					</div>
 				</div>
+				
 			</section>
 
-		
-		  
     </main>
+	
+	<footer>
+		<div class="container">
+			<div class="footer_container">
+				<div class="logo">
+					<p>LULIS</p>
+				</div>
+				
+				<div class="menu">
+					<ul>
+						<li><a href="#about">О компании</a></li>
+						<li><a href="#portfolio">Портфолио</a></li>
+						<li><a href="#mnenia">Отзывы клиентов</a></li>
+						<li><a href="#link">Контакты</a></li>
+					</ul>
+				</div>
+				
+				<span>© Copyright 2018. All Rights Reserved. </span>
+				
+			</div>
+		</div>
+	
+	</footer>
 
 		<script type="text/javascript">
 
