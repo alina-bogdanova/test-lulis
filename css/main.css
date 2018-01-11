@@ -62,8 +62,8 @@ header,main {
 .top_wrapper .top_text,
 .top_wrapper-2 .top_text-2 {
     display: inline-block;
-	color: #17083c;
-	background: rgba(192, 148, 167, 0.5);
+	color: #fff;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .top_wrapper .top_text h1,
@@ -112,7 +112,8 @@ section{
     font-weight: 600;
 }
 
-.desc_wrap p:after{
+.desc_wrap p:after,
+.social h4:after{
 	content: "";
     height: 1px;
     left: 50%;
@@ -131,7 +132,9 @@ section{
 }
 
 
-.desc_container {
+.desc_container,
+.link_container,
+.footer_container {
 	margin-left: -15px;
     margin-right: -15px;
 	overflow: hidden;
@@ -225,6 +228,10 @@ section.bg-image {
     padding: 70px 0 40px;
 }
 
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/bg-2.jpg");
+}
+
 .top_wrapper-2 {
     position: relative;
 }
@@ -249,4 +256,111 @@ section.portfolio {
 
 #gallery{
 	position:relative;
+}
+
+.link_container p{
+	text-align: center;
+    color: #17083c;
+    font-size: 18px;
+}
+
+.contact{
+	text-align: center;
+	padding: 15px 0;
+}
+
+.contact_tel,
+.contact_mail,
+.social_icon_vk,
+.social_icon_fb,
+.social_icon_inst{
+	padding-top: 15px;
+}
+
+.tel,
+.mail,
+.vk,
+.fb,
+.inst{
+	display: inline-block;
+    vertical-align: middle;
+}
+.contact span{
+	font-size: 25px;
+	color: #17083c;
+}
+
+.contact a{
+    color: #17083c;
+	font-size: 25px;
+}
+
+.social{
+	padding-top: 50px;
+}
+
+.social h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+	margin: 0 0 60px;
+}
+
+.social_icon{
+	padding-top: 15px;
+}
+
+footer{
+	margin-top: 50px;
+	border-top: 1px solid #000;
+}
+
+.footer_container {
+	padding: 15px 15px 40px;
+	text-align: center;
+}
+
+.logo{
+	display: inline-block;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 14px;
+    color: #fff;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 54px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+	color: #000;
+}
+
+.footer_container p{
+	margin: 15px 0;
+    padding: 5px 15px;
+    color: #000;
+    border: 1px solid #000;
+    background: white;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.footer_container span{
+	padding: 10px 0;
+    color: #000;
+	font-size: 12px;
 }
