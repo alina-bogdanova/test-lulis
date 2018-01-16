@@ -48,6 +48,10 @@
 		position: relative;
 		margin: 0 auto;
 		}
+		
+	.menu li{
+        margin-right: 20px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -63,8 +67,15 @@
 		float:none;
         margin-bottom: 35px;
 	}
-
 	
+	.callbacks img{
+		height: 400px !important;
+	}
+	
+	.menu li{
+		display: block;
+        margin-right: 0;
+	}	
 }
 
 @media (max-width: 480px) {
@@ -77,11 +88,7 @@
 	{
 		font-weight: normal !important;
 	}
-		
-	.cd-fixed-bg {
-    background-attachment: scroll;
-	}
-	
+
 	.section_header{
 		width: 95%;
 		margin: 0 auto;
@@ -94,5 +101,26 @@
 		float:none;
         margin-bottom: 35px;
 	}
+}
+
+@media (max-width: 420px) {
+	.top_wrapper .top_text h1{
+		font-size: 85px;
+	}
+	
+	h3.city-name{
+		font-size: 14px;
+	}
+	
+	.menu li{
+		display: block;
+        margin-right: 0;
+	}	
 
 }
+
+@media screen and (max-width: 600px) {
+  .callbacks_nav {
+    top: 47%;
+    }
+  }
