@@ -294,12 +294,12 @@ section.portfolio {
 }
 
 .client_left {
-    width: 49%;
+    width: 34%;
     float: left;
 }
 
 .client_right {
-    width: 49%;
+    width: 64%;
     float: left;
     text-align: justify;
 }
@@ -307,7 +307,7 @@ section.portfolio {
 .clear {
 clear:both;
 font-size:0;
-overflow:hidden; /* тройной презерватив для IE */
+overflow:hidden; 
 }
 
 .contact{

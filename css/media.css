@@ -79,13 +79,15 @@
 }
 
 @media (max-width: 480px) {
-
 	header{
 		min-height: 640px;
 	}
 	
-	h1,h2,h3,p
-	{
+	.top_wrapper .top_text h1{
+		font-size: 95px;
+	}
+	
+	h1,h2,h3,p	{
 		font-weight: normal !important;
 	}
 
@@ -116,7 +118,21 @@
 		display: block;
         margin-right: 0;
 	}	
+	
+	p.text-testimonial {
+		padding: 10px 15px;
+	}
+	
+	.link_container{
+		margin:0;
+	}
 
+}
+
+@media (max-width: 375px) {
+	.top_wrapper .top_text h1{
+		font-size: 75px;
+	}
 }
 
 @media screen and (max-width: 600px) {
