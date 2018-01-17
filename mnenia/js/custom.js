@@ -15,11 +15,17 @@ $(document).ready(function() {
 	      margin:30,
 	      stagePadding: 30,
 	    },
+		600 : {
+	      dots: true,
+	      margin:30,
+	      stagePadding: 30,
+	    },
+		
 	    // > 768
 	    768 : {
 	    	margin:130,
-	    	stagePadding: 130,
-        dots: true,
+	    	stagePadding: 50,
+			dots: true,
 	    }
 		}
 	});
