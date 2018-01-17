@@ -163,7 +163,7 @@ h3.city-name {
 }
 
 /*p*/.text-testimonial {
-	padding:10px 0;
+	padding:10px 20px 10px 0;
 }
 
 .block-items {
@@ -207,11 +207,11 @@ h3.city-name {
 }
 
 .owl-my-nav .owl-prev {
-	left: 100px;
+	/*left: 100px;*/
 }
 
 .owl-my-nav .owl-next {
-	right: 80px;
+	right: 0%;
 	text-align: right;
 }
 
