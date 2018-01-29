@@ -135,8 +135,18 @@
         margin-right: 0;
 	}	
 	
+	.client_left{
+		margin-right:0;
+		width: 35%;
+	}
+	
+	.client_right{
+		width: 60%;
+	}
+	
 	p.text-testimonial {
 		padding: 10px 15px;
+		margin: 0;
 	}
 	
 	.link_container{
