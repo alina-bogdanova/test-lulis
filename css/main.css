@@ -299,7 +299,8 @@ section.portfolio {
 }
 
 .client_right {
-    width: 64%;
+    width: 63%;
+    margin-left: 15px;
     float: left;
     text-align: justify;
 }
